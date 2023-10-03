@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import axios from 'axios';
-import { icons, routeLinks } from '@/app/(dashboard)/(routes)/dashboard/page';
+import { Icons, routeLinks } from '@/app/(dashboard)/(routes)/dashboard/page';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import {
   Button,
@@ -63,7 +63,7 @@ const ProModal = () => {
           <Box sx={{ mx: 'auto', }}>
             <Stack spacing={1}>
               {routeLinks.map(({ label, icon, color }, index) => {
-                const Icon = icons[icon];
+                const Icon = Icons[icon];
                 return (
                   <Card key={index} sx={{ width: '100%', minWidth: 250 }}>
                     <Box sx={{ display: 'flex', p: 1, width: '100%'}}>

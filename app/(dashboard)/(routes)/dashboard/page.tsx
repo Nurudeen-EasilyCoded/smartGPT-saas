@@ -19,7 +19,7 @@ import {
 } from '@mui/icons-material';
 import Link from 'next/link';
 
-export const icons = {
+export const Icons = {
   BurstMode,
   Code,
   LibraryMusic,
@@ -31,7 +31,7 @@ export const icons = {
 
 interface RouteLink {
   label: string;
-  icon: keyof typeof icons;
+  icon: keyof typeof Icons;
   href: string;
   color: string;
 }
@@ -83,7 +83,7 @@ const Dashboard = () => {
       <Box sx={{ width: '350px', mx: 'auto', }}>
         <Stack spacing={3}>
           {routeLinks.map(({ label, icon, href, color }, index) => {
-            const Icon = icons[icon];
+            const Icon = Icons[icon];
             return (
               <Link
                 href={href}

@@ -10,7 +10,7 @@ import {
   ListItemText,
   Toolbar,
 } from '@mui/material';
-import { routeLinks, icons } from '@/constants/sidebarLinks';
+import { routeLinks, Icons } from '@/constants/sidebarLinks';
 import { usePathname } from 'next/navigation';
 
 const SidebarNav = ({ handleDrawerToggle }: any) => {
@@ -42,7 +42,7 @@ const SidebarNav = ({ handleDrawerToggle }: any) => {
         sx={{ mb: '200px' }}
       >
         {routeLinks.map(({ label, icon, href, color }, index) => {
-          const Icon = icons[icon];
+          const Icon = Icons[icon];
           return (
             <Link
               key={index}

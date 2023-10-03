@@ -9,7 +9,7 @@ import {
   VideoLibrary,
 } from '@mui/icons-material';
 
-export const icons = {
+export const Icons = {
   BurstMode,
   Code,
   LibraryMusic,
@@ -21,7 +21,7 @@ export const icons = {
 
 interface RouteLink {
   label: string;
-  icon: keyof typeof icons;
+  icon: keyof typeof Icons;
   href: string;
   color: string;
 }
