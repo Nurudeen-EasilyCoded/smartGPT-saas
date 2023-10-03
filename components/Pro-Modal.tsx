@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import axios from 'axios';
-import { Icons, routeLinks } from '@/app/(dashboard)/(routes)/dashboard/page';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import {
   Button,
@@ -20,6 +19,7 @@ import {
 } from '@mui/material';
 import { useProModal } from '@/hooks/use-pro-modal';
 import { toast } from 'react-toastify';
+import { Icons, routeLinks } from '@/constants/constant';
 
 const ProModal = () => {
   const [loading, setLoading] = React.useState(false);
