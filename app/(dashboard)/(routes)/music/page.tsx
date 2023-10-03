@@ -135,7 +135,7 @@ const MusicPage = () => {
               <CardContent sx={{ textAlign: 'center' }}>
                 <Typography
                   gutterBottom
-                  sx={{ fontSize: '13px', letterSpacing: 0.5, mb: 1 }}
+                  sx={{ fontSize: '13px', letterSpacing: 0.5, mb: 1, color: '#FFFFFF', backgroundColor: 'red'}}
                 >
                   Music lyrics might be muted due to copyright issues
                 </Typography>
