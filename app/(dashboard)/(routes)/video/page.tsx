@@ -113,9 +113,12 @@ const VideoPage = () => {
             <Empty label='No video generated' />{' '}
           </Box>
         )}
-        <Box sx={{ maxWidth: 600, mx: 'auto', mt: 5 }}>
+        <Box sx={{ mx: 'auto', mt: 5, maxWidth: '100%' }}>
           {video && (
-            <video controls>
+            <video
+              controls
+              style={{ maxWidth: '100%', width: '100%', aspectRatio: '16/9' }}
+            >
               <source src={video} />
             </video>
           )}

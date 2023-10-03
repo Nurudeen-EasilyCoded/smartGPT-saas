@@ -28,7 +28,7 @@ interface FreeCounter {
   apiLimitCount: number;
   isPro: boolean;
 }
-const FreeCount = ({ apiLimitCount = 10, isPro = false }: FreeCounter) => {
+const FreeCount = ({ apiLimitCount = 0, isPro = false }: FreeCounter) => {
   const proModal = useProModal();
   const [mounted, setMounted] = useState(false);
 
@@ -45,7 +45,7 @@ const FreeCount = ({ apiLimitCount = 10, isPro = false }: FreeCounter) => {
   }
 
   return (
-    <Paper sx={{ m: 2, p: 1, textAlign: 'center' }}>
+    <Paper sx={{ m: 2, mt: '-150px', p: 1, textAlign: 'center' }}>
       <Typography sx={{}}>
         {apiLimitCount} / {MAX_FREE_COUNTS} Free Generations
       </Typography>

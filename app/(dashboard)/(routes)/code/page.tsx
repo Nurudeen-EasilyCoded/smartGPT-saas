@@ -151,7 +151,7 @@ const CodePage = () => {
                 ),
                 code: ({ node, ...props }) => (
                   <code
-                    style={{ backgroundColor: '#D8D8D8', padding: 1 }}
+                    style={{ backgroundColor: '#D8D8D8', padding: '0.2em 0.4em', fontSize: '0.9em',}}
                     {...props}
                   />
                 ),

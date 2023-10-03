@@ -22,7 +22,7 @@ const Navbar = ({ handleDrawerToggle }: any) => {
       sx={{
         width: { sm: `calc(100% - ${drawerWidth}px)` },
         ml: { sm: `${drawerWidth}px` },
-        backgroundColor: 'transparent',
+        backgroundColor: '#242424',
       }}
     >
       <Container maxWidth='xl'>
