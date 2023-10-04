@@ -9,7 +9,7 @@ interface EmptyProps {
 const Empty = ({ label }: EmptyProps) => {
   return (
     <Box sx={{ textAlign: 'center', mt: 5 }}>
-      <Image alt='empty' src='/empty.png' height={300} width={300} />
+      <Image alt='empty' src='/empty.png' height={200} width={300} />
       <p style={{ color: '#fafafa'}}>{label}</p>
     </Box>
   );
